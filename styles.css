@@ -1,0 +1,191 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 20px;
+  }
+  
+  /* Header styles */
+  #header {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+  }
+  
+  #header-img {
+    width: 100px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+  
+  #header > p {
+    font-size: 22px;
+  }
+  
+  /* Navigation styles */
+  #nav-bar {
+    margin-left: auto;
+  }
+  
+  #nav-bar > ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Form styles */
+  #form {
+    text-align: center;
+    margin-top: 5vh;
+  }
+  
+  #form > h1 {
+    margin: 1rem 0;
+  }
+  
+  #submit {
+    display: block;
+    margin: 1rem auto;
+    background-color: skyblue;
+    width: 165px;
+    height: 30px;
+  }
+  
+  #submit:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+  
+  /* Feature section styles */
+  #feature {
+    width: 30%;
+    margin:  0 auto;
+  }
+  
+  #feature > div {
+    margin: 2rem 0;
+  }
+  
+  #feature > div > h2 {
+    margin: 0.3rem 0;
+  }
+  
+  /* Video section styles */
+  #video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #video {
+    width: 100%;
+    height: 20vh;
+    margin: 2rem 0;
+  }
+  
+  /* Item container styles */
+  #item-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  #item {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #item > li {
+    list-style: none;
+    margin: 1rem 0;
+    border: 1px solid gray;
+  }
+  
+  #item > li > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  #item > li > div > h3 {
+    background: lightgray;
+    padding: 10px;
+  }
+  
+  ol > li {
+    list-style: none;
+    text-align: center;
+  }
+  
+  /* Select button styles */
+  #select-button {
+    background-color: yellow;
+    width: 80px;
+    height: 25px;
+    border-radius: 5px;
+  }
+  
+  #select-button:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  #footer-container {
+    text-align: center;
+    width: 30%;
+    margin: 2rem auto;
+  }
+  
+  #footer-item {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #footer-item > li  {
+    list-style: none;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+    #header {
+      height: auto;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+    }
+    #nav-bar > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #nav-bar {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    #item-container > #item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
